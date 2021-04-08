@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0 , shrink-to-fit=no" />
+  <title>Checkout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- Css style -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles-002.css">
+
+  <script src="https://kit.fontawesome.com/c9fd902987.js" crossorigin="anonymous"></script>
+  <!-- BootStrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+  <script>
+    function buyProduct() {
+      alert('Payment successful');
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="Payment">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="d-lg-inline-block">Payment</h3>
+              <div class="d-lg-inline-block credit-card-icons">
+                <i class="fab fa-cc-mastercard fa-3x" style="color:	#eb001b;"></i>
+                <i class="fab fa-cc-visa fa-3x" style="color:#172274;"></i>
+                <i class="fab fa-cc-amex fa-3x" style="color: #002663;"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card Details</h5>
+              <form action="" onsubmit="buyProduct()">
+                <div class="form-group">
+                  <label for="cardholdername">Card holder's name</label>
+                  <input type="text" required class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                  <label for="cardnumberlabel">Card Number</label>
+                  <input type="text" required class="form-control" id="cardnumber" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+                </div>
+
+                <div class="form-group">
+                  <h5 class="card-title">Card Expiry Date</h5>
+                  <select class="form-control d-lg-inline-block expirymonth" id="cardexpirymonth">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                  </select>
+                  <!-- </div> -->
+                  <!-- <div class="form-group"> -->
+                  <select class="form-control d-lg-inline-block expiryyear" id="cardexpiryyear">
+                    <option>2022</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                    <option>2027</option>
+                    <option>2028</option>
+                    <option>2029</option>
+                    <option>2030</option>
+                    <option>2031</option>
+                    <option>2032</option>
+                  </select>
+                  <h5 class="card-title">Cvv</h5>
+                  <input type="text" required class="form-control d-lg-inline-block cardcvv" maxlength="3" id="cvv" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+                </div>
+                <button type="submit" id="btnbuy" class="btn btn-block btn-lg btn-warning">Buy</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

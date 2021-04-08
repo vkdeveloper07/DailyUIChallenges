@@ -1,0 +1,13 @@
+body {
+  font-family: "Montserrat-Bold", sans-serif;
+}
+.Payment{
+  margin: 8% auto;
+  width: 400px;
+}
+.expirymonth ,.expiryyear,.cardcvv{
+  width: 100px;
+}
+.credit-card-icons{
+  padding: 0 0 0 30px;
+}
