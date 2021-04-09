@@ -1,0 +1,91 @@
+body{
+  font-family: "Montserrat";
+  color:black;
+  text-align: center;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Montserrat-Bold";
+}
+ul{
+  list-style-type: none;
+}
+.intro{
+  background-image: url('images/image2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar-light{
+  background-color: #21209c;
+
+}
+.navbar-light .navbar-brand{
+  font-weight: bold;
+  color: #fff;
+
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.3rem;
+    font-family: 'Montserrat-Black';
+}
+.nav-link:hover{
+  color: #fff;
+}
+
+.titlebox{
+  padding: 9% 13%;
+  font-family: 'Montserrat-Black', sans-serif;
+}
+.title{
+  /* font-weight: bold; */
+  /* font-size: 3rem; */
+  font-family: 'Montserrat-Black', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+@media (max-width:576px)
+{
+  .title{
+    padding: 5%;
+  }
+   .btn{
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Features */
+.features-section{
+  padding: 10% 15%;
+  text-align: center;
+}
+.icon{
+  font-size: 2rem;
+  color: #007bff;
+  padding: 10px;
+}
+
+/* price section */
+.pricing-column{
+  padding: 2% 4%;
+  font-family: 'Montserrat-Black', sans-serif;
+
+}
+.download-button {
+  width: 50%;
+  margin:25px auto 10px ;
+}
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Footer */
+.social-icon{
+  margin: 20px 10px;
+}
+.footer-section{
+  font-family: 'Montserrat-bold', sans-serif;
+  margin: 5% 0 0;
+}
