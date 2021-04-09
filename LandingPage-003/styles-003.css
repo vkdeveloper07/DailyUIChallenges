@@ -47,9 +47,6 @@ ul{
 }
 @media (max-width:576px)
 {
-  .intro{
-    color:#fff;
-  }
   .title{
     padding: 5%;
   }
